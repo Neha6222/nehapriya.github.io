@@ -740,4 +740,175 @@ footer {
     .hero-card h3 {
         font-size: 34px;
     }
+}/* =========================
+   PROJECT HIGHLIGHTS
+========================= */
+
+.project-highlights {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 12px;
+
+    margin: 28px 0;
+}
+
+.highlight-card {
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    padding: 20px;
+
+    min-height: 105px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    transition: all 0.25s ease;
+}
+
+.highlight-card:hover {
+    border-color: var(--accent);
+
+    transform: translateY(-3px);
+}
+
+.highlight-card strong {
+    font-size: 24px;
+
+    line-height: 1;
+
+    color: var(--text);
+
+    margin-bottom: 8px;
+}
+
+.highlight-card span {
+    color: var(--muted);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1.5px;
+}
+
+
+/* =========================
+   ACADEMIC BACKGROUND
+========================= */
+
+.education-card {
+    display: grid;
+
+    grid-template-columns: 180px 1fr;
+
+    gap: 40px;
+
+    padding: 45px 0;
+
+    border-top: 1px solid var(--border);
+
+    border-bottom: 1px solid var(--border);
+
+    align-items: start;
+}
+
+.education-year {
+    color: var(--accent);
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+}
+
+.education-content {
+    max-width: 800px;
+}
+
+.education-degree {
+    color: var(--accent);
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+.education-content h3 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 34px;
+
+    line-height: 1.2;
+
+    margin-bottom: 16px;
+}
+
+.education-content > p:last-child {
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.8;
+
+    max-width: 700px;
+}
+
+
+/* =========================
+   CERTIFICATION YEAR
+========================= */
+
+.certification-card strong {
+    display: block;
+
+    color: var(--accent);
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    margin-top: 25px;
+}
+
+
+/* =========================
+   MOBILE PROJECT HIGHLIGHTS
+========================= */
+
+@media (max-width: 650px) {
+
+    .project-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-card {
+        min-height: 85px;
+    }
+
+    .education-card {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+        padding: 35px 0;
+    }
+
+    .education-content h3 {
+        font-size: 28px;
+    }
+
 }
